@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <script type="text/javascript" language="javascript" src="signup.js"></script>
+    <script type="text/javascript" language="javascript" src="login.js"></script>    
+</head>
+<div align = "center">
+<body bgcolor="#E6E6FA">
+    
+    <h1>Signup</h1>    
+        <form id = "signup" onsubmit="signup();return false;">
+            <label for = "nm">Name</label>
+            <input type = "text" placeholder="Enter Name" 
+            minlength = "1" maxlength = "20" id = "nm" required></br></br>            
+            <label for = "email">Email</label>
+            <input type = "email" placeholder="Enter Email" id = "email" required></br></br>
+            <label for = "password">Password</label>            
+            <input type = "password" placeholder="Enter Password" 
+            minlength = "6" maxlength = "15" id = "pass" required></br></br>            
+            <input type="submit" value = "Signup"/>            
+        </form></br>
+        <a href = "login.html">Login</a>
+    </div>                  
+</body>
+</html>

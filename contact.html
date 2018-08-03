@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <script type="text/javascript" language="javascript" src="contact.js"></script>    
+</head>
+
+<body bgcolor="#E6E6FA">
+    <div align = "center">
+    <h1>Contact Us</h1>     
+        <form id = "contact">
+            <label for = "name" min = "3" max = "20">Name</label>
+            <input type = "text" placeholder="Enter Name" 
+            id = "name" required></br></br>
+            <label for = "email">Email</label>
+            <input type = "text" placeholder="Enter email" 
+            id = "email" required></br></br>
+            <label for = "phone">Phone</label>
+            <input type = "tel" placeholder="Enter Phone number" 
+            id = "phone" required></br></br>
+            <label for = "question">Question</label>
+            <textarea rows="6" cols="25" type = "text" placeholder="Enter your query" 
+            id = "question" min = "1" max = "200" required></textarea></br></br>
+            <input type="button" onClick = "contact(this.form)" value = "Send"/>            
+        </form></br>    
+        <a href="login.html">Login</a>        
+    </div>               
+</body>
+</html>
+
