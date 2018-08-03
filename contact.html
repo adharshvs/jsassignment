@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Contact Us</title>
-    <script type="text/javascript" language="javascript" src="contact.js"></script>    
+    <script type="text/javascript" language="javascript" src="contact.js"></script>       
 </head>
 
 <body bgcolor="#E6E6FA">
     <div align = "center">
     <h1>Contact Us</h1>     
-        <form id = "contact">
+        <form id = "contact" onsubmit="contact()">
             <label for = "name" minlength = "3" maxlength = "20">Name</label>
             <input type = "text" placeholder="Enter Name" 
             id = "name" required></br></br>
@@ -21,7 +21,7 @@
             <label for = "question">Question</label>
             <textarea rows="6" cols="25" type = "text" placeholder="Enter your query" 
             id = "question" minlength = "1" maxlength = "200" required></textarea></br></br>
-            <input type="button" onClick = "contact(this.form)" value = "Send"/>            
+            <input type="submit" value = "Send"/>            
         </form></br>    
         <a href="login.html">Login</a>        
     </div>               

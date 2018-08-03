@@ -1,13 +1,14 @@
 
 var object = {};
 
-function contact(form) {
-    
-    var name = form.name.value;
-    var email = form.email.value;
-    var phone = form.phone.value;
-    var query = form.question.value;
-    
+function contact() {
+    //alert("hello");
+    document.getElementById("contact").submit();
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var query = document.getElementById('question').value;
+        
     var json = {
         name: name,
         email: email,
@@ -26,5 +27,5 @@ function contact(form) {
         }
     };
     var data = json;
-    xhr.send(data);
+    xhr.send(data);      
 }
