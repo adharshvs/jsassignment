@@ -1,20 +1,17 @@
-
-var object = {};
-
-function contact() {
-    //alert("hello");
-    document.getElementById("contact").submit();
+function contact() {    
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var phone = document.getElementById('phone').value;
     var query = document.getElementById('question').value;
-        
+    
     var json = {
         name: name,
         email: email,
         phone: phone,
         question: query 
     };
+
+    var data = json;
     
     var xhr = new XMLHttpRequest();
     var url = "http://demo6835492.mockable.io/sendEmail";
@@ -26,6 +23,7 @@ function contact() {
             console.log(json);
         }
     };
-    var data = json;
-    xhr.send(data);      
+    
+    xhr.send(data);
+    //document.getElementById("contact").submit();      
 }
